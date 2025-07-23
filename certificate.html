@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate Slider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./h.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        min-height: 100vh;
+      } */
+
+      .slider-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 100vh;
+      }
+
+      .swiper {
+        width: 45%;
+        max-width: 900px;
+        height: 550px;
+      }
+
+      .swiper-slide {
+        background: #fff;
+        border-radius: 7px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .slide-img-container {
+        height: 70%;
+        overflow: hidden;
+      }
+
+      .slide-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .slide-content a{
+        color:rgb(10, 95, 253);
+        font-weight: 600;
+        font-size:20px;
+        margin-left: 15px;
+      }
+      .slide-content {
+        height: 30%;
+        background: #3d3c3c;
+        color: #fff;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .name{
+        color:rgb(60, 190, 199);
+        text-align: center;
+              
+      }
+
+      .slide-content h3 {
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+      }
+
+      .slide-content span {
+        font-size: 0.95rem;
+        color: #6df7c1;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .swiper {
+          height: 420px;
+          width: 90%;
+        }
+
+        .slide-content h3 {
+          font-size: 1.1rem;
+        }
+
+        .slide-content span {
+          font-size: 0.85rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .swiper {
+          height: 340px;
+          width: 90%;
+        }
+
+        .slide-content h3 {
+          font-size: 1rem;
+        }
+
+        .slide-content span {
+          font-size: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">Balaji Sakthivel</div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="nav-links" id="navLinks">
+        <a onclick="location.href='./index.html'">Home</a>
+        <a onclick="location.href='./skill.html'">Skill</a>
+        <a onclick="location.href='./project.html'">Project</a>
+        <a onclick="location.href='./intern.html'">Intern</a>
+        <a class="active">Certificate</a>
+        <a onclick="location.href='./resume.html'">Resume</a>
+        <a onclick="location.href='./contact.html'">Contact</a>
+        <a onclick="location.href='./about.html'">About</a>
+      </div>
+    </nav>
+    <h2 class="name">Profossional Certificates </h2>
+    <div class="slider-container">
+      
+      <div class="swiper">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="slide-img-container">
+              <img class="slide-img" src="./certificate/aws.jpg" alt="Certificate 1">
+            </div>
+            <div class="slide-content">
+              <h3>AWS Cloud Technical Essentials</h3>
+              <span>Issuer: Amazon Web Services (via Coursera)
+                Date:July 5, 2025
+                Verification:<a href="https://www.coursera.org/account/accomplishments/verify/1JDUIGENTMTK" target="_blank">Click</a>
+
+              </span>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="slide-img-container">
+              <img class="slide-img" src="./certificate/oracle.jpg" alt="Certificate 2">
+            </div>
+            <div class="slide-content">
+              <h3>Oracle Cloud Infrastructure 2023 AI Certified Foundations Associate</h3>
+              <span>Issuer: Oracle University
+                Date:May 12, 2024 | Valid until May 12, 2026
+               
+                Verification: ID 1006464190C123AFCA
+              </span>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="slide-img-container">
+              <img class="slide-img" src="./certificate/meta.jpg" alt="Certificate 3">
+            </div>
+            <div class="slide-content">
+              <h3>Front-End Development (Meta)</h3>
+              <span>Issuer:Meta (via Coursera)
+                Date:July 1, 2025
+                
+                Verification:<a href="https://www.coursera.org/account/accomplishments/verify/XTEY4WSCN5IO" target="_blank">Click</a>
+              </span>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="slide-img-container">
+              <img class="slide-img" src="./certificate/microsoft.jpg" alt="Certificate 4">
+            </div>
+            <div class="slide-content">
+              <h3>Foundations of Coding Full-Stack (Microsoft)</h3>
+              <span>Issuer:Microsoft (via Coursera)
+                Date:July 3, 2025
+               
+                Verification:<a href="https://coursera.org/share/fbc1d5c263badd5bd81955a3186d1898" target="_blank">Click</a></span>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+            <div class="slide-img-container">
+              <img class="slide-img" src="./certificate/infosys frontend.jpg" alt="Certificate 5">
+            </div>
+            <div class="slide-content">
+              <h3>JavaScript & Front-End Development (Infosys)</h3>
+              <span>Issuer:Infosys Springboard
+                Date:July 2, 2025
+              
+                Verification:<a href="./certificate/if.jpg" target="_blank">Click</a></span>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="swiper-slide">
+            <div class="slide-img-container">
+              <img class="slide-img" src="./certificate/michigan.jpg" alt="Certificate 6">
+            </div>
+            <div class="slide-content">
+              <h3>Introduction to HTML5 (University of Michigan)</h3>
+              <span>Issuer:University of Michigan (via Coursera)
+                Date:July 5, 2025
+               
+                Verification:<a href="https://www.coursera.org/account/accomplishments/verify/BLDS09RYY36O" target="_blank">Click</a></span>
+            </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="swiper-slide">
+            <div class="slide-img-container">
+              <img class="slide-img" src="./certificate/google.jpg" alt="Certificate 7">
+            </div>
+            <div class="slide-content">
+              <h3>Foundations of UX Design (Google)</h3>
+              <span>Issuer:Google (via Coursera)
+                Date: July 5, 2025
+        
+                Verification:<a href="https://www.coursera.org/account/accomplishments/verify/C6AS3OEYZP2A" target="_blank">Click</a></span>
+            </div>
+          </div>
+
+          <!-- Slide 8 -->
+          <div class="swiper-slide">
+            <div class="slide-img-container">
+              <img class="slide-img" src="./certificate/imb se.jpg" alt="Certificate 8">
+            </div>
+            <div class="slide-content">
+              <h3>Introduction to Software Engineering (IBM)</h3>
+              <span>Issuer:IBM (via Coursera)
+                Date:June 30, 2025
+              
+                Verification:<a href="https://www.coursera.org/account/accomplishments/verify/Z58BY4ONNXA3" target="_blank">Click</a></span>
+            </div>
+          </div>
+
+          <!-- Slide 9 -->
+          <div class="swiper-slide">
+            <div class="slide-img-container">
+              <img class="slide-img" src="./certificate/simplelearn.jpg" alt="Certificate 9">
+            </div>
+            <div class="slide-content">
+              <h3>CSS (Simplilearn)</h3>
+              <span>Issuer:* Simplilearn
+                Date: January 19, 2024
+                
+                Verification:Code 4794407 </span>
+            </div>
+          </div>
+
+          <!-- Slide 10 -->
+          <div class="swiper-slide">
+            <div class="slide-img-container">
+              <img class="slide-img" src="./certificate/infosys js.jpg" alt="Certificate 10">
+            </div>
+            <div class="slide-content">
+              <h3>JavaScript(Infosys)</h3>
+              <span>Issuer: Infosys Springboard
+                Date:July 5, 2025
+               
+                Verification:<a href="./certificate/ijs.jpg" target="_blank">Click</a></span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-img-container">
+              <img class="slide-img" src="./certificate/great.jpg" alt="Certificate 11">
+            </div>
+            <div class="slide-content">
+              <h3>Front End Development-HTML (Great Learning Academy)</h3>
+              <span>Issuer:Great Learning Academy  
+Date: January 2024  
+Verification:<a href="https://verify.mygreatlearning.com/XIPQJNMR" target="_blank">Click</a></span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-img-container">
+              <img class="slide-img" src="./certificate/ibm front.jpg" alt="Certificate 12">
+            </div>
+            <div class="slide-content">
+              <h3> Front-End and Web Development(IBM)</h3>
+              <span>Issuer: IBM Skills Network via Coursera  
+Completion Date:June 29, 2025 
+Verification:<a href="https://www.coursera.org/account/accomplishments/verify/QUEPBUTOL407" target="_blank">Click</a></span>
+
+</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-img-container">
+              <img class="slide-img" src="./certificate/adaovi.jpg" alt="Certificate 13">
+            </div>
+            <div class="slide-content">
+              <h3>WEB DEVELOPMENT (Adaovi)</h3>
+              <span>Issuer:Adaovi  
+Date: January 08, 2024 
+Verification: Red ID AV12342 | </span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Swiper Controls -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        effect: 'cube',
+        grabCursor: true,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 30,
+          shadowScale: 0.8,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+
+</html>

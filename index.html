@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balaji Sakthivel Portfolio</title>
+  <link rel="stylesheet" href="./h.css">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Balaji Sakthivel</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a class="active">Home</a>
+      <a onclick="location.href='./skill.html'">Skill</a>
+      <a onclick="location.href='./project.html'">Project</a>
+      <a onclick="location.href='./intern.html'">Intern</a>
+      <a onclick="location.href='./certificate.html'">Certificate</a>
+      <a onclick="location.href='./resume.html'">Resume</a>
+      <a onclick="location.href='./contact.html'">Contact</a>
+      <a onclick="location.href='./about.html'">About</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <img src="./certificate/balajiphoto.jpg" alt="Profile" class="profile-pic">
+    <h1 class="fade-in">Hi There,<br> I'm Balaji Sakthivel <strong>M</strong></h1>
+    <h2><span id="typing"></span></h2>
+    
+    <div class="buttons slide-up">
+      <a onclick="location.href='./contact.html'" class="btn">Contact me</a>
+      <a onclick="location.href='./about.html'" class="btn">About me</a>
+    </div>
+  </section>
+
+  <!-- JS Scripts -->
+  <script src="./script.js"></script>
+
+</body>
+</html>

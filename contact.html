@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Balaji Sakthivel</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./h.css">
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+      }
+
+      .contact-wrapper {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      .contact-form {
+        background-color: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .form-control {
+        border-radius: 10px;
+      }
+
+      .btn-whatsapp {
+        border-radius: 30px;
+        font-weight: 600;
+
+      }
+
+      .d-grid button {
+        background-color: rgb(26, 56, 26);
+      }
+
+      .d-grid button:hover {
+        background-color: rgb(29, 100, 29);
+        color: white;
+      }
+      .contact-wrapper input{
+        margin-bottom: 0px;
+        padding:10px 10px
+      }
+    
+
+      textarea {
+        resize: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">Balaji Sakthivel</div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="nav-links" id="navLinks">
+        <a onclick="location.href='./index.html'">Home</a>
+        <a onclick="location.href='./skill.html'">Skill</a>
+        <a onclick="location.href='./project.html'">Project</a>
+        <a onclick="location.href='./intern.html'">Intern</a>
+        <a onclick="location.href='./certificate.html'">Certificate</a>
+        <a onclick="location.href='./resume.html'">Resume</a>
+        <a class="active">Contact</a>
+        <a onclick="location.href='./about.html'">About</a>
+      </div>
+    </nav>
+    <!-- Main Contact Section -->
+    <main class="contact-wrapper">
+      <form id="contactForm" class="contact-form">
+        <h2 class="text-center mb-4 text-primary">Contact Me</h2>
+
+        <div class="mb-3">
+          <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+        </div>
+        <div class="mb-3">
+          <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number" required />
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" placeholder="Your Email" required />
+        </div>
+
+        <div class="mb-4">
+          <textarea class="form-control" id="message" placeholder="Your Message" rows="3" required></textarea>
+        </div>
+
+         <div class="d-grid">
+      <button type="submit" class="btn btn-success">📩 Send Message</button>
+         </div>
+      </form>
+    </main>
+ <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const text = `Hello, I'm ${name}%0A📧 Email: ${email}%0A📞 Phone: ${phone}%0A💬 Message: ${message}`;
+      const whatsappNumber = "919751945743"; // YOUR WhatsApp number with country code, no '+'
+
+      const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+      window.open(url, "_blank");
+    });
+  </script>
+    <!-- WhatsApp Script -->
+    <script src="./script.js"></script>
+
+    <!-- Bootstrap JS (optional) -->
+    
+  </body>
+
+</html>

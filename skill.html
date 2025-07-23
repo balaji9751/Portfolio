@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="./h.css">
+  <style>
+       #skills {
+      background: linear-gradient(-45deg, #1f1c2c, #928dab, #0f2027, #2c5364);
+      background-size: 400% 400%;
+      animation: gradientBG 11s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .tech-logo {
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Balaji Sakthivel</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a onclick="location.href='./index.html'">Home</a>
+      <a class="active">Skill</a>
+      <a onclick="location.href='./project.html'">Project</a>
+      <a onclick="location.href='./intern.html'">Intern</a>
+      <a onclick="location.href='./certificate.html'">Certificate</a>
+      <a onclick="location.href='./resume.html'">Resume</a>
+      <a onclick="location.href='./contact.html'">Contact</a>
+      <a onclick="location.href='./about.html'">About</a>
+    </div>
+  </nav>
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <div class="section-title text-center mb-5">
+        <h2 class="display-4 fw-bold">My Skills</h2>
+        <p class="lead text-muted">Here are the technologies and tools I'm proficient with</p>
+      </div>
+
+      <div class="row">
+        <!-- Programming Languages -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h3 class="h4 mb-0"><i class="fas fa-code me-2"></i>Programming Languages</h3>
+            </div>
+            <div class="card-body">
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="text-decoration-none d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="tech-logo" alt="JavaScript">
+                    <span>JavaScript</span>
+                  </a>
+                  <span>90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <a href="https://www.python.org/" target="_blank" class="text-decoration-none d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="tech-logo" alt="Python">
+                    <span>Python</span>
+                  </a>
+                  <span>85%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <a href="https://www.java.com/" target="_blank" class="text-decoration-none d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="tech-logo" alt="Java">
+                    <span>Java</span>
+                  </a>
+                  <span>75%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-success text-white">
+              <h3 class="h4 mb-0"><i class="fas fa-globe me-2"></i>Web Development</h3>
+            </div>
+            <div class="card-body">
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="text-decoration-none d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="tech-logo" alt="HTML5">
+                    <span>HTML5</span>
+                  </a>
+                  <span>95%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="text-decoration-none d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="tech-logo" alt="CSS3">
+                    <span>CSS3</span>
+                  </a>
+                  <span>90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <a href="https://reactjs.org/" target="_blank" class="text-decoration-none d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="tech-logo" alt="React">
+                    <span>React</span>
+                  </a>
+                  <span>80%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-info text-white">
+              <h3 class="h4 mb-0"><i class="fas fa-database me-2"></i>Databases</h3>
+            </div>
+            <div class="card-body">
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <a href="https://www.mysql.com/" target="_blank" class="text-decoration-none d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="tech-logo" alt="MySQL">
+                    <span>MySQL</span>
+                  </a>
+                  <span>85%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <a href="https://www.mongodb.com/" target="_blank" class="text-decoration-none d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="tech-logo" alt="MongoDB">
+                    <span>MongoDB</span>
+                  </a>
+                  <span>75%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <a href="https://www.postgresql.org/" target="_blank" class="text-decoration-none d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="tech-logo" alt="PostgreSQL">
+                    <span>PostgreSQL</span>
+                  </a>
+                  <span>70%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Frameworks -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-warning text-dark">
+              <h3 class="h4 mb-0"><i class="fas fa-tools me-2"></i>Tools & Frameworks</h3>
+            </div>
+            <div class="card-body">
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <a href="https://git-scm.com/" target="_blank" class="text-decoration-none d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="tech-logo" alt="Git">
+                    <span>Git</span>
+                  </a>
+                  <span>90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <a href="https://getbootstrap.com/" target="_blank" class="text-decoration-none d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="tech-logo" alt="Bootstrap">
+                    <span>Bootstrap</span>
+                  </a>
+                  <span>85%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <a href="https://www.docker.com/" target="_blank" class="text-decoration-none d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="tech-logo" alt="Docker">
+                    <span>Docker</span>
+                  </a>
+                  <span>70%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toggle Button -->
+      <div class="text-center mt-4">
+        <button class="btn btn-outline-dark" onclick="toggleSkills()">Show More Skills</button>
+      </div>
+
+      <!-- Additional Skills -->
+      <div class="row mt-4" id="additional-skills" style="display: none;">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-header bg-dark text-white">
+              <h3 class="h4 mb-0"><i class="fas fa-star me-2"></i>Additional Skills</h3>
+            </div>
+            <div class="card-body">
+              <div class="row text-center">
+                <div class="col-md-3 col-6 mb-3">
+                  <a href="https://www.figma.com/" target="_blank" class="text-decoration-none">
+                    <div class="p-3 bg-light rounded">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="tech-logo mb-2" alt="Figma" />
+                      <h5 class="h6 mb-0">UI/UX Design</h5>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                  <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank" class="text-decoration-none">
+                    <div class="p-3 bg-light rounded">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="tech-logo mb-2" alt="Responsive" />
+                      <h5 class="h6 mb-0">Responsive Design</h5>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                  <a href="https://restfulapi.net/" target="_blank" class="text-decoration-none">
+                    <div class="p-3 bg-light rounded">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="tech-logo mb-2" alt="API" />
+                      <h5 class="h6 mb-0">REST APIs</h5>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                  <a href="https://pandas.pydata.org/" target="_blank" class="text-decoration-none">
+                    <div class="p-3 bg-light rounded">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" class="tech-logo mb-2" alt="Data" />
+                      <h5 class="h6 mb-0">Data Analysis</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Toggle Script -->
+  <script>
+    function toggleSkills() {
+      const section = document.getElementById("additional-skills");
+      const button = document.querySelector("button[onclick='toggleSkills()']");
+      if (section.style.display === "none") {
+        section.style.display = "block";
+        button.innerText = "Show Less Skills";
+      } else {
+        section.style.display = "none";
+        button.innerText = "Show More Skills";
+      }
+    }
+  </script>
+  <script src="./script.js"></script>
+</body>
+</html>
