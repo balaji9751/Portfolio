@@ -8,7 +8,7 @@ body, html {
   width: 100%;
   min-height: 100vh;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(180deg, #f6d3 0%, #fda085 100%);
+  background: linear-gradient(180deg, #f6d365 0%, #fda085 100%);
 }
 
 .container {
@@ -439,7 +439,7 @@ color: white;}
   border: 3px solid #ffffff;
   margin-bottom: 20px;
   position: absolute;
- left: 69%;
+ left: 79%;
   transform: translateX(-50%);
   margin-bottom: 50px;
   object-fit: cover;
